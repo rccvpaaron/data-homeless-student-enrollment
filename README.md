@@ -19,10 +19,11 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
 2. I filtered each sheet by the following columns to limit the data to Schools in Riverside Unified School District:
 - District Name = Riverside Unified
 - Aggregate Level = S
-3. After failing to successfully use a VSTACK formula for the first time, I copied the filtered data from each sheet and stacked them in a new sheet manually and named it "Riverside Unified".
-4. I saved this new file locally as "RUSD HSE data 19-25.xlsx"
-5. I uploaded ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=&rtpof=true&sd=true) to Google Sheets.
-6. I converted ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=103174665380155667131&rtpof=true&sd=true) to a [Google Sheet](https://docs.google.com/spreadsheets/d/1rBlyNReUlVHquiVsW_emQ6S33g8Do95JwqubdK91Aco/edit?usp=sharing).
+3. Row 186, Column H in the 2021-2022 data set had a typo. Changed "REACH Leadership STEM Academy" to "REACH Leadership STEAM Academy".
+4. After failing to successfully use a VSTACK formula for the first time, I copied the filtered data from each sheet and stacked them in a new sheet manually and named it "Riverside Unified".
+5. I saved this new file locally as "RUSD HSE data 19-25.xlsx"
+6. I uploaded ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=&rtpof=true&sd=true) to Google Sheets.
+7. I converted ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=103174665380155667131&rtpof=true&sd=true) to a [Google Sheet](https://docs.google.com/spreadsheets/d/1rBlyNReUlVHquiVsW_emQ6S33g8Do95JwqubdK91Aco/edit?usp=sharing).
 
 ## 03. Analyzing the Data
 1. I created a pivot chart from "Riverside Unified" named "SUM of HSE" with the following steps:
@@ -96,8 +97,81 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
     + Embed link: off
     + Datawrapper attribution: on
   * Share buttons
-    + Social media share buttons: off    
+    + Social media share buttons: off
+    
 ### Percent of K-12 students experiencing homelessness by school in RUSD, 2019-2025
 1. Upload Data
 - Copied the data table from SHARE of HSE pivot chart
 - Pasted the data table from SHARE of HSE pivot chart
+2. Check & Describe
+- Transposed rows and columns
+- "First row as label" box selected
+3. Visualize
+- Chart Type: Lines
+- Refine:
+  * Horizontal axis
+    + Select column: School Name
+    + Grid: off
+  * Vertical axis
+    + Scale type: Linear
+    + Custom range: min - 18
+    + Number format: 0.0%
+    + Grid: Off
+    + Labels: Off
+  * Lines
+    + Base color: #18a1cd
+    + Interpolation: Linear
+    + Show value labels: same as vertical axis; line ends=first, last; labels per line=0; use line color=yes; show line symbols=no
+  * Customize Line: Longfellow Elementary
+    + Color: #18a1cd
+    + Interpolation: Linear
+    + Width: 2 pixels
+    + Dash: Solid
+    + Label: As legend
+    + Show value labels: same as vertical axis; line ends=first, last
+    + Show Line Symbols: no
+  * Customize Line: Mark Twain Elementary
+    + Color: #09bb9f
+    + Interpolation: Linear
+    + Width: 2 pixels
+    + Dash: Solid
+    + Label: As legend
+    + Show value labels: same as vertical axis; line ends=first, last
+    + Show Line Symbols: no
+  * Customize Line: REACH Leadership STEAM Academy
+    + Width: Hidden
+    + Note: This is a charter school I missed in data cleaning.
+  * Customize Line: Remainder of Schools
+    + Color: #e0e0e0
+    + Interpolation: Linear
+    + Width: 2 pixels
+    + Dash: Dotted
+    + Label: no
+    + Show value labels: no
+    + Show Line Symbols: no
+  * Tooltips
+    + Show tooltips on hover
+    + Values format: Same as vertical axis
+  * Appearance
+    + Plot height: Fixed
+    + 300px
+    + Label margin: 0px
+- Annotate:
+  * Title: Number of K-12 students experiencing homelessness in RUSD, 2019-2025
+  * Description: Homelessness is described as living Temporarily Doubled Up, Temporarily Unsheltered, in&nbsp;<br>Temporary Shelters, Hotels/Motels and Unknown.
+  * Notes: Data includes all Riverside Unified School District non-charter schools.
+  * Data Source: California Department of Education
+  * Link to data source: https://www.cde.ca.gov/ds/ad/fileshse.asp
+  * Byline: Aaron Friesen
+  * Alternative description for screen readers: 
+- Layout:
+  *  Output locale: English (en-US)
+  *  Layout
+    + Theme: Datawrapper
+  * Footer
+    + Data download: on
+    + Image download options: off
+    + Embed link: off
+    + Datawrapper attribution: on
+  * Share buttons
+    + Social media share buttons: off    
