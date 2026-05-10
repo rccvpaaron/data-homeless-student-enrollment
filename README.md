@@ -21,11 +21,11 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
 - Aggregate Level = S
 3. After failing to successfully use a VSTACK formula for the first time, I copied the filtered data from each sheet and stacked them in a new sheet manually and named it "Riverside Unified".
 4. I saved this new file locally as "RUSD HSE data 19-25.xlsx"
-5. I uploaded ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=103174665380155667131&rtpof=true&sd=true) to Google Sheets.
+5. I uploaded ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=&rtpof=true&sd=true) to Google Sheets.
 6. I converted ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=103174665380155667131&rtpof=true&sd=true) to a [Google Sheet](https://docs.google.com/spreadsheets/d/1rBlyNReUlVHquiVsW_emQ6S33g8Do95JwqubdK91Aco/edit?usp=sharing).
 
 ## 03. Analyzing the Data
-1. I created a pivot chart named "SUM of HSE" with the following steps:
+1. I created a pivot chart from "Riverside Unified" named "SUM of HSE" with the following steps:
 - Added Row: "Academic Year"
   * All selected
   * "Show totals" box checked
@@ -33,5 +33,71 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
   * Summarize by: SUM
   * Show as: Default
 - Added Filter: "Charter School" and selected "No"
+2. I added the following columns to "Riverside Unified":
+- "School Category" -- in new column (I) with the purpose of aggregating data by category of school
+  * C = Continuation School
+  * E = Elementary School
+  * H = High School
+  * M = Middle School
+  * A = Alternative School
+- "Share HSE" -- in new column (O) with the purpose of calculating the share of Homeless Enrollment (Column N)  in Cumulative Enrollment (Column M)
+  * Formula: =N2/M2
+  * Format: as percent
+    + Decreased decimal point to tenths
 
 ## 04. Creating the Datawrapper Charts
+### Number of K-12 students experiencing homelessness in RUSD, 2019-2025
+1. Upload Data
+- Copied the data table from SUM of HSE pivot chart
+- Pasted the data table from SUM of HSE pivot chart
+2. Check & Describe
+- No changes
+- "First row as label" box selected
+3. Visualize
+- Chart Type: Lines
+- Refine:
+  * Horizontal axis
+    + Select column: Academic Year
+    + Grid: off
+  * Vertical axis
+    + Scale type: Linear
+    + Custom range: min - 3000
+    + Number format: (automatic)
+    + Grid: Lines
+    + Labels: Auto, Left
+  * Customize Line
+    + Color: #18a1cd
+    + Interpolation: Linear
+    + Width: 2 pixels
+    + Dash: Solid
+    + Label: None
+    + Show Line Symbols: Circle, first & last, Filled, Size=3.5, Opacity=1
+  * Tooltips
+    + Show tooltips on hover
+    + Values format: Same as vertical axis
+  * Appearance
+    + Plot height: Fixed
+    + 300px
+- Annotate:
+  * Title: Number of K-12 students experiencing homelessness in RUSD, 2019-2025
+  * Description: Homelessness is described as living Temporarily Doubled Up, Temporarily Unsheltered, in&nbsp;<br>Temporary Shelters, Hotels/Motels and Unknown.
+  * Notes: Data includes all Riverside Unified School District non-charter schools.
+  * Data Source: California Department of Education
+  * Link to data source: https://www.cde.ca.gov/ds/ad/fileshse.asp
+  * Byline: Aaron Friesen
+  * Alternative description for screen readers: A line chart showing the number of K-12 students experiencing homelessness in RUSD, 2019-2025. It rose from 1,144 students in 2019-2020 to 2,486 students in 2024-2025.
+- Layout:
+  *  Output locale: English (en-US)
+  *  Layout
+    + Theme: Datawrapper
+  * Footer
+    + Data download: on
+    + Image download options: off
+    + Embed link: off
+    + Datawrapper attribution: on
+  * Share buttons
+    + Social media share buttons: off    
+### Percent of K-12 students experiencing homelessness by school in RUSD, 2019-2025
+1. Upload Data
+- Copied the data table from SHARE of HSE pivot chart
+- Pasted the data table from SHARE of HSE pivot chart
