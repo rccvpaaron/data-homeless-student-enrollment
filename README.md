@@ -19,9 +19,19 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
 2. I filtered each sheet by the following columns to limit the data to Schools in Riverside Unified School District:
 - District Name = Riverside Unified
 - Aggregate Level = S
-3. After failing to successfully use a VSTACK formula for the first time, I copied the filtered data from each sheet and stacked them in a new sheet manually.
+3. After failing to successfully use a VSTACK formula for the first time, I copied the filtered data from each sheet and stacked them in a new sheet manually and named it "Riverside Unified".
 4. I saved this new file locally as "RUSD HSE data 19-25.xlsx"
-5. I uploaded "RUSD HSE data 19-25.xlsx" to Google Sheets.
-6. I converted "RUSD HSE data 19-25.xlsx" to a Google Sheet.
+5. I uploaded ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=103174665380155667131&rtpof=true&sd=true) to Google Sheets.
+6. I converted ["RUSD HSE data 19-25.xlsx"](https://docs.google.com/spreadsheets/d/16R-V5unq1OjSRNofp31RPYhJdsBTVHfs/edit?usp=sharing&ouid=103174665380155667131&rtpof=true&sd=true) to a [Google Sheet](https://docs.google.com/spreadsheets/d/1rBlyNReUlVHquiVsW_emQ6S33g8Do95JwqubdK91Aco/edit?usp=sharing).
 
 ## 03. Analyzing the Data
+1. I created a pivot chart named "SUM of HSE" with the following steps:
+- Added Row: "Academic Year"
+  * All selected
+  * "Show totals" box checked
+- Added Values: Homeless Student Enrollment
+  * Summarize by: SUM
+  * Show as: Default
+- Added Filter: "Charter School" and selected "No"
+
+## 04. Creating the Datawrapper Charts
