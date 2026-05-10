@@ -100,6 +100,7 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
     + Social media share buttons: off
     
 ### Percent of K-12 students experiencing homelessness by school in RUSD, 2019-2025
+#### Version 1
 1. Upload Data
 - Copied the data table from SHARE of HSE pivot chart
 - Pasted the data table from SHARE of HSE pivot chart
@@ -175,3 +176,9 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
     + Datawrapper attribution: on
   * Share buttons
     + Social media share buttons: off    
+#### Version 2
+- Added Description 
+#### Version 3
+- Removed line highlight formatting from Mark Twain Elementary 
+- Added line main base formatting to Mark Twain Elementary
+- Added line highlight formatting to Lake Matthews Elementary
