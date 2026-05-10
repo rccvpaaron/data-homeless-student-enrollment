@@ -180,5 +180,5 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
 - Added Description 
 #### Version 3
 - Removed line highlight formatting from Mark Twain Elementary 
-- Added line main base formatting to Mark Twain Elementary
+- Added line base formatting to Mark Twain Elementary
 - Added line highlight formatting to Lake Matthews Elementary
