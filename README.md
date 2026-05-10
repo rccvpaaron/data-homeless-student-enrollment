@@ -1,2 +1,3 @@
 # Homeless Student Enrollment
-Tracking the steps of data cleaning and analysis.
+I collected data on students experiencing homelessness in Riverside Unified School District in Riverside County, California.
+
