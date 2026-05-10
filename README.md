@@ -15,8 +15,9 @@ I collected data on students experiencing homelessness in Riverside Unified Scho
   - The files can be found in the [Data](https://github.com/rccvpaaron/data-homeless-student-enrollment/tree/main/Data) folder.
 
 ## 02. Cleaning the Data
-1. After failing to successfully add all .txt files to Google Sheets on account of their size, I added all the .txt files into individual sheets of an Excel book.
-2. I filtered each sheet by the following columns to limit the data to Schools in Riverside Unified School District:
+1. After failing to successfully add all .txt files to Google Sheets on account of their size, I added all the .txt files into individual sheets of an Excel book saved locally as "Homeless Enrollment Data.xlsx".
+- "Homeless Enrollment Data.xlsx" is over the 25MB limit for Github upload.
+3. I filtered each sheet by the following columns to limit the data to Schools in Riverside Unified School District:
 - District Name = Riverside Unified
 - Aggregate Level = S
 3. Row 186, Column H in the 2021-2022 data set had a typo. Changed "REACH Leadership STEM Academy" to "REACH Leadership STEAM Academy".
